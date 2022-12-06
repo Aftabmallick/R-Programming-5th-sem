@@ -15,3 +15,8 @@ m<-rbind(m,d)
 m
 diag(m)
 t(m)
+if(nrow(m)==ncol(m)){
+  print("Square matrix")
+}else{
+  print("Not a square matrix")
+}
