@@ -1,0 +1,12 @@
+df<-as_tibble(iris)
+dim(df)
+df
+a1<-df%>%arrange(desc(Sepal.Length))
+a1
+a2<-df%>%arrange(Sepal.Length,Sepal.Width)
+a2
+a3<-df%>%filter(Sepal.Length>5)
+a3
+a4<-df%>%slice(5:10)
+a4
+print(df%>%slice_max(Sepal.Length))
